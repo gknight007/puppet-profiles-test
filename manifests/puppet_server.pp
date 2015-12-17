@@ -11,7 +11,6 @@ class profiles::puppet_server () {
 
   class { '::r10k':
     remote  => 'git@github.com:gknight007/test-puppet-control.git',
-    basedir => "${::settings::confdir}/environments",
   }
 
 }
